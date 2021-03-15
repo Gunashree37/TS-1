@@ -7,7 +7,7 @@ class Block{
             //isStatic:true
            
         }
-        this.visibility = 225;
+        
         this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
         this.height = height;
@@ -28,9 +28,7 @@ class Block{
         pop();
       }else{
         World.remove(world, this.body);
-        push();
-        this.visibility = this.visibility -5;
-        pop();
+        
         
       }
     }
